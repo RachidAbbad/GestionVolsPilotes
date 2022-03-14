@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.VolFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/uiBlue"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Vols"/>
+
+            <ImageButton
+                android:id="@+id/btn_add_vol"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_margin="10dp"
+                android:background="@drawable/add_black"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/search_vol"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Rechercher par Num | Société | NumPilote | Date"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_margin="20px"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/uiGrey"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vol_rv"
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+
+
+</LinearLayout>

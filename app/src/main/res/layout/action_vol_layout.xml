@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/uiGrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20px">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10px"
+            android:hint="Num Vol"
+            app:boxCornerRadiusBottomEnd="30px"
+            app:boxCornerRadiusBottomStart="30px"
+            app:boxCornerRadiusTopEnd="30px"
+            app:boxCornerRadiusTopStart="30px">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/num_vol"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_margin="10px"
+            android:hint="Société"
+            app:boxCornerRadiusBottomEnd="30px"
+            app:boxCornerRadiusBottomStart="30px"
+            app:boxCornerRadiusTopEnd="30px"
+            app:boxCornerRadiusTopStart="30px">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/societe"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <Spinner
+            android:id="@+id/pilotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

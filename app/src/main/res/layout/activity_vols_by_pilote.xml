@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.VolsByPiloteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/uiBlue">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vols par Pilote"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/matricule_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:spinnerMode="dialog"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_margin="20px"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/uiGrey"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vol_by_pilote_rv"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="5dp"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+
+
+</LinearLayout>

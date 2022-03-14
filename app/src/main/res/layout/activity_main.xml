@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/uiBlue"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100px"
+            android:layout_margin="10px"
+            android:layout_height="100px"
+            android:src="@drawable/flight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestion Vols/Pilotes"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/uiBlue"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_pilotes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/uiBlue"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="16dp"
+            android:text="Pilotes"/>
+
+        <Button
+            android:id="@+id/btn_vols"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/uiBlue"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="16dp"
+            android:text="Vols"/>
+
+        <Button
+            android:id="@+id/btn_vols_by_pilote"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/uiBlue"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="16dp"
+            android:text="Vols/Pilote"/>
+
+    </LinearLayout>
+
+</LinearLayout>

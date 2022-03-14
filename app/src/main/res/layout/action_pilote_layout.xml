@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerPilote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    app:cardBackgroundColor="@color/uiGrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20px">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:hint="Matricule Pilote"
+            app:boxCornerRadiusBottomEnd="30px"
+            app:boxCornerRadiusBottomStart="30px"
+            app:boxCornerRadiusTopEnd="30px"
+            app:boxCornerRadiusTopStart="30px">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/matricule_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:hint="Nom Pilote"
+            app:boxCornerRadiusBottomEnd="30px"
+            app:boxCornerRadiusBottomStart="30px"
+            app:boxCornerRadiusTopEnd="30px"
+            app:boxCornerRadiusTopStart="30px">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nom_pilote_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:textAllCaps="false"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
