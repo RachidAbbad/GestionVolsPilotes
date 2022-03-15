@@ -17,7 +17,7 @@ import java.util.List;
 public class ManageDatabase extends SQLiteOpenHelper {
 
     public static final String DB_NAME = "ManagePiloteVols";
-    public static final int DB_VERSION = 2;
+    public static final int DB_VERSION = 7;
 
     //Pilotes Infos :
     public static final String TABLE_PILOTE_NAME = "Pilote";
